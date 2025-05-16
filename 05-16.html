@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shape Layout</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      position: fixed;
+      top:0;
+      right:0;
+      width: 400px;
+      height: 300px;
+      background: #5A9F48;
+    }
+    .circle {
+      position: fixed;
+      right:130px;
+      width: 140px;
+      height: 140px;
+      border-radius: 5em;
+      background: #000000;
+      z-index:2;
+    }
+    .circle.top {
+      top:25px;
+    }
+    .circle.bottom {
+      top:135px;
+    }
+    .behind {
+      position: fixed;
+      right:100px;
+      top:80px;
+      width: 200px;
+      height: 140px;
+      border-radius: 5em;
+      background: #000000;
+      z-index:1;
+    }
+    .inside {
+      position: fixed;
+      right:160px;
+      width: 80px;
+      height: 80px;
+      border-radius: 5em;
+      background: #5A9F48;
+      z-index:2;
+    }
+    .inside.top {
+      top:55px;
+    }
+    .inside.bottom {
+      top:165px;
+    }
+    .oval {
+      position: fixed;
+      right:130px;
+      top:110px;
+      width: 140px;
+      height: 80px;
+      border-radius:5em;
+      background: #5A9F48;
+      z-index:1;
+    }
+    .square {
+      position: fixed;
+      right:175px;
+      top:110px;
+      width: 50px;
+      height: 80px;
+      background: #5A9F48;
+      z-index:2;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="circle top"></div>
+    <div class="circle bottom"></div>
+    <div class="behind"></div>
+    <div class="inside top"></div>
+    <div class="inside bottom"></div>
+    <div class="oval"></div>
+    <div class="square"></div>
+  </div>
+</body>
+</html>
